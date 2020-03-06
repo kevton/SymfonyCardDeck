@@ -55,17 +55,18 @@ class __TwigTemplate_c5455cd18affc30b55c640902fe775cbfc12b0f9c0fcaed20f43e5dfe40
         ";
         // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 7
+        // line 9
         echo "    </head>
     <body>
         ";
-        // line 9
+        // line 11
         $this->displayBlock('body', $context, $blocks);
-        // line 10
+        // line 48
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 11
-        echo "    </body>
+        // line 49
+        echo "
+    </body>
 </html>
 ";
         
@@ -105,6 +106,9 @@ class __TwigTemplate_c5455cd18affc30b55c640902fe775cbfc12b0f9c0fcaed20f43e5dfe40
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
+        // line 7
+        echo "            <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -113,7 +117,7 @@ class __TwigTemplate_c5455cd18affc30b55c640902fe775cbfc12b0f9c0fcaed20f43e5dfe40
 
     }
 
-    // line 9
+    // line 11
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -123,6 +127,43 @@ class __TwigTemplate_c5455cd18affc30b55c640902fe775cbfc12b0f9c0fcaed20f43e5dfe40
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
+        // line 12
+        echo "            <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+                <a class=\"navbar-brand\" href=\"#\">Navbar</a>
+                <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+                    <span class=\"navbar-toggler-icon\"></span>
+                </button>
+
+                <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+                    <ul class=\"navbar-nav mr-auto\">
+                    <li class=\"nav-item active\">
+                        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>
+                    </li>
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"#\">Link</a>
+                    </li>
+                    <li class=\"nav-item dropdown\">
+                        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Dropdown
+                        </a>
+                        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"#\">Action</a>
+                        <a class=\"dropdown-item\" href=\"#\">Another action</a>
+                        <div class=\"dropdown-divider\"></div>
+                        <a class=\"dropdown-item\" href=\"#\">Something else here</a>
+                        </div>
+                    </li>
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
+                    </li>
+                    </ul>
+                    <form class=\"form-inline my-2 my-lg-0\">
+                    <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">
+                    <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
+                    </form>
+                </div>
+            </nav>
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -131,7 +172,7 @@ class __TwigTemplate_c5455cd18affc30b55c640902fe775cbfc12b0f9c0fcaed20f43e5dfe40
 
     }
 
-    // line 10
+    // line 48
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -156,7 +197,7 @@ class __TwigTemplate_c5455cd18affc30b55c640902fe775cbfc12b0f9c0fcaed20f43e5dfe40
 
     public function getDebugInfo()
     {
-        return array (  135 => 10,  117 => 9,  99 => 6,  80 => 5,  68 => 11,  65 => 10,  63 => 9,  59 => 7,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  176 => 48,  131 => 12,  121 => 11,  110 => 7,  100 => 6,  81 => 5,  68 => 49,  65 => 48,  63 => 11,  59 => 9,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -166,13 +207,52 @@ class __TwigTemplate_c5455cd18affc30b55c640902fe775cbfc12b0f9c0fcaed20f43e5dfe40
     <head>
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">
+        {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+            <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+                <a class=\"navbar-brand\" href=\"#\">Navbar</a>
+                <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+                    <span class=\"navbar-toggler-icon\"></span>
+                </button>
+
+                <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+                    <ul class=\"navbar-nav mr-auto\">
+                    <li class=\"nav-item active\">
+                        <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a>
+                    </li>
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link\" href=\"#\">Link</a>
+                    </li>
+                    <li class=\"nav-item dropdown\">
+                        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                        Dropdown
+                        </a>
+                        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
+                        <a class=\"dropdown-item\" href=\"#\">Action</a>
+                        <a class=\"dropdown-item\" href=\"#\">Another action</a>
+                        <div class=\"dropdown-divider\"></div>
+                        <a class=\"dropdown-item\" href=\"#\">Something else here</a>
+                        </div>
+                    </li>
+                    <li class=\"nav-item\">
+                        <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
+                    </li>
+                    </ul>
+                    <form class=\"form-inline my-2 my-lg-0\">
+                    <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">
+                    <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>
+                    </form>
+                </div>
+            </nav>
+        {% endblock %}
         {% block javascripts %}{% endblock %}
+
     </body>
 </html>
-", "base.html.twig", "/Applications/MAMP/htdocs/Symfony2.0/templates/base.html.twig");
+", "base.html.twig", "/Applications/MAMP/htdocs/SymfonyCardDeck/templates/base.html.twig");
     }
 }
