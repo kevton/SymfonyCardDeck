@@ -1,2 +1,1 @@
-# SymfonyCardDeck
-Compose your deck and go to fight
+# Card-Game-Symfony
